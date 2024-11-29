@@ -84,12 +84,69 @@
 
 <hr>
 
-<h2 style="text-align:center;">Para saber mais sobre a ditadura militar</h2><br><br>
+<h2 style="text-align:center;">Para saber mais sobre a ditadura militar</h2><br>
 <center> 
 <p><a href="https://pt.wikipedia.org/wiki/Ditadura_militar_brasileira;">descubra mais sobre a Ditadura Militar</a></p>
+<hr>
 <center> 
 
 
 
-</body>
-</htm>
+
+</form>
+
+
+
+<h2>Formulário Simples</h2>
+
+    <form action="processar.php" method="post">
+
+        <!-- Nome Completo -->
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" placeholder="seuemail@dominio.com" required><br><br>
+
+        <!-- Data de Nascimento -->
+        <label for="data">Data de Nascimento:</label><br>
+        <input type="date" id="data" name="data" required><br><br>
+
+        <!-- Senha -->
+        <label for="senha">Senha:</label><br>
+        <input type="password" id="senha" name="senha" placeholder="Sua senha" required><br><br>
+
+        <!-- Número de Telefone -->
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required><br><br>
+
+        <!-- País -->
+        <label for="pais">País:</label><br>
+        <select id="pais" name="pais" required>
+            <option value="">Escolha um país</option>
+            <option value="brasil">Brasil</option>
+            <option value="portugal">Portugal</option>
+            <option value="argentina">Argentina</option>
+        </select><br><br>
+
+        <!-- Gênero -->
+        <label>Gênero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino" required>
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="outro" name="genero" value="outro" required>
+        <label for="outro">Outro</label><br><br>
+
+        <!-- Termos e Condições -->
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Eu aceito os termos e condições.</label><br><br>
+
+        <!-- Comentários -->
+        <label for="comentarios">Comentários:</label><br>
+        <textarea id="comentarios" name="comentarios" placeholder="Escreva algo..." rows="4" cols="50"></textarea><br><br>
+
+        <!-- Botões -->
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
